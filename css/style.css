@@ -1,0 +1,25 @@
+body{
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+  font-family: Cuprum, Helvetica, Arial;
+}
+
+h1{
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+
+}
+
+h2{
+  font-size: 30px;
+  line-height: 24px;
+  font-family: PT Sans, Helvetica, Arial;
+}
+
+h3{
+  font-size: 36px;
+  line-height: 24px;
+  color: #32425c;
+}
