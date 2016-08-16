@@ -48,7 +48,9 @@ h3 {
 .header-bottom,
 .features,
 .popular-items-title,
-.popular-producers-title {
+.popular-producers-title,
+.footer-top,
+.footer-bottom {
 	width: 100%;
 }
 
@@ -202,6 +204,10 @@ h3 {
 	margin-right: 0;
 }
 
+.services {
+	margin-bottom: 70px;
+}
+
 .services-slids li {
 	list-style: none;
 }
@@ -229,4 +235,20 @@ h3 {
 
 .services-img {
 	float: left;
+}
+
+.index-info-company {
+	float: left;
+	width: 540px;
+	margin-right: 20px;
+}
+
+.info-map {
+	float: left;
+	width: 300px;
+}
+
+.footer-top li {
+	display: inline-block;
+	vertical-align: top;
 }
