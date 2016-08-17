@@ -3,6 +3,8 @@
  margin: 0;
 }
 
+/* Блок общее */
+
 body {
   font-size: 13px;
   line-height: 24px;
@@ -28,10 +30,22 @@ h3 {
   color: #000;
 }
 
+.header-top,
+.header-bottom,
+.features,
+.popular-items-title,
+.popular-producers-title,
+.footer-top,
+.footer-bottom,
+.footer-middle {
+	width: 100%;
+}
+
 .container {
 	width: 940px;
 	margin: 0 auto;
 	padding: 0 10px;
+  background-color: lightyellow; /* для наглядности */
 }
 
 .clearfix {
@@ -40,19 +54,7 @@ h3 {
 	clear: both;
 }
 
-.main-header {
-	margin-bottom: 60px;
-}
-
-.header-top,
-.header-bottom,
-.features,
-.popular-items-title,
-.popular-producers-title,
-.footer-top,
-.footer-bottom {
-	width: 100%;
-}
+/* Шапка сайта*/
 
 .header-top {
 	margin-bottom: 46px;
@@ -62,6 +64,7 @@ h3 {
 	float: left;
 	margin-right: 10px;
 	width: 220px;
+  height: 70px;
 }
 
 .search {
@@ -74,7 +77,7 @@ h3 {
 
 .menu li {
 	display: inline-block;
-	verticle-align: top;
+	vertical-align: top;
 	list-style: none;
 }
 
@@ -91,8 +94,13 @@ h3 {
 }
 
 .user-block {
+  position: relative;
 	float: right;
 	width: 300px;
+}
+
+.user-profile {
+  float: right;
 }
 
 .main-navigation {
@@ -103,12 +111,46 @@ h3 {
 
 .main-navigation li {
 	display: inline-block;
-	verticle-align: top;
+	vertical-align: top;
 	list-style: none;
 }
 
+/* Личный кабинет */
+
+.user-set {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+}
+
+.user-set li {
+  display: inline-block;
+  vertical-align: top;
+  list-style: none;
+}
+
+/* Шапка страницы каталог*/
+
+.breadcrumbs li {
+ display: inline-block;
+ vertical-align: top;
+ list-style: none;
+}
+
+.breadcrumbs {
+  height: 60px;
+}
+
+.header-catalog h1 {
+  padding: 25px;
+  margin-bottom: 20px;
+}
+
+/* Блок особенности */
+
 .features {
-	margin-bottom: 53px;
+	margin-bottom: 54px;
+  padding-top: 60px;
 }
 
 .item-features {
@@ -130,7 +172,7 @@ h3 {
 	margin-bottom: 0;
 }
 
-.feature-slider {
+.feature-slider .active {
 	float: left;
 	margin-right: 20px;
 	width: 620px;
@@ -138,7 +180,7 @@ h3 {
 }
 
 .feature-slider li {
-		list-style: none;
+	list-style: none;
 }
 
 .feature-slids {
@@ -157,9 +199,23 @@ h3 {
 	z-index: 2;
 }
 
-.feature-slids li:last-child {
+.feature-slids li:not(.active) {
 	display: none;
 }
+
+.control-left {
+  position: absolute;
+  left: 0;
+  z-index: 3;
+}
+
+.control-right {
+  position: absolute;
+  right: 0;
+  z-index: 3;
+}
+
+/* Блок популярные товары и производители */
 
 .popular-items-title a,
 .popular-producers-title a{
@@ -171,13 +227,10 @@ h3 {
 	margin-bottom: 20px;
 }
 
-.popular-items {
-	margin-bottom: 21px;
-}
-
 .popular-item {
 	float: left;
 	margin-right: 20px;
+  margin-bottom: 21px;
 	width: 220px;
 	height: 318px;
 }
@@ -187,22 +240,25 @@ h3 {
 }
 
 .popular-producers {
-	margin-bottom: 85px;
+	margin-bottom: 65px;
 }
-
 
 .popular-producers-list li {
 	float: left;
 	margin-right: 20px;
+  margin-bottom: 20px;
 	width: 220px;
 	height: 145px;
 	list-style: none;
+  background-color: #FFFFFF;
 }
 
 .popular-producers-list li:nth-child(4),
 .popular-producers-list li:nth-child(8) {
 	margin-right: 0;
 }
+
+/* Блок сервисы */
 
 .services {
 	margin-bottom: 70px;
@@ -216,7 +272,6 @@ h3 {
 .services-img {
 	display: none;
 }
-
 
 .service-title {
 	width: 360px;  /** по макету 400px **/
@@ -237,6 +292,17 @@ h3 {
 	float: left;
 }
 
+/* Блок о компании*/
+
+.index-info {
+  padding-bottom: 75px;
+}
+
+.index-info h2 {
+  padding-bottom: 20px;
+  padding-top: 70px;
+}
+
 .index-info-company {
 	float: left;
 	width: 540px;
@@ -248,7 +314,79 @@ h3 {
 	width: 300px;
 }
 
+/* Боковой филтер блока каталог */
+
+.catalog-filter {
+  float: left;
+  width: 220px;
+  margin-right: 20px;
+}
+
+.catalog-filter li {
+  list-style: none;
+}
+
+/* Блока каталог */
+
+.catalog-items {
+  width: 700px;
+}
+
+.catalog-items-filter li {
+  display: inline-block;
+  vertical-align: top;
+  list-style: none;
+}
+
+/* Подвал сайта */
+
 .footer-top li {
 	display: inline-block;
 	vertical-align: top;
+  list-style: none;
+}
+
+.footer-top {
+  margin-bottom: 25px;
+}
+
+.footer-address {
+  float: left;
+}
+
+.footer-middle li {
+  display: inline-block;
+	vertical-align: top;
+  list-style: none;
+}
+
+.footer-menu {
+  float: right;
+}
+
+.footer-bottom {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.footer-copyright {
+  float: left;
+  width: 230px;
+  margin-right: 150px;
+}
+
+.footer-socials {
+  float: left;
+}
+
+.footer-feedback {
+  float: right;
+  width: 140px;
+
+}
+
+.footer-developers {
+  float: right;
+  width: 140px;
+  margin-left: 20px;
 }

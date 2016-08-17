@@ -12,7 +12,7 @@
 
       <div class="header-top">
         <div class="logo">
-          <img src="img/index-logo-header.jpg" width="220" height="47" alt="Техномарт">
+          Техномарт
         </div>
         <form action="https://echo.htmlacademy.ru" method="get">
           <input type="search" name="search" placeholder="Поиск">
@@ -22,7 +22,7 @@
             <a class="bookmark" href="#">Закладки:0</a>
           </li>
           <li>
-            <a class="basket active" href="#">Корзина:0</a>
+            <a class="basket active" href="#">Корзина:10</a>
           </li>
           <li>
             <a class="btn-order" href="#">Оформить заказ</a>
@@ -30,7 +30,7 @@
         </ul>
       </div>
 
-      <div class="header-bottom">
+      <div class="header-bottom clearfix">
         <div class="header-description">
           <p>Интернет-магазин
             строительных материалов
@@ -111,41 +111,46 @@
           <span>Фильтр</span>
           <form action="https://echo.htmlacademy.ru" method="post">
             <div class="filter-price">
-              <h2>Цена:</h2>
+              <div>Цена:</div>
+              <input type="range" min="0" max="50000" step="500">
               <input type="range" min="0" max="50000" step="500">
               <output name="min">0</output>
               <output name="sum">30000</output>
             </div>
-            <h2>Производители</h2>
-            <ul class="sidebar">
-              <li>
-                <input type="checkbox" id="bosch" name="producer" checked>
-                <label for="bosch">Bosch</label>
-              </li>
-              <li>
-                <input type="checkbox" id="interskol" name="producer">
-                <label for="interskol">Интерскол</label>
-              </li>
-              <li>
-                <input type="checkbox" id="dewalt" name="producer" checked>
-                <label for="dewalt">Dewalt</label>
-              </li>
-              <li>
-                <input type="checkbox" id="hitachi" name="producer">
-                <label for="hitachi">Hitachi</label>
-              </li>
-            </ul>
-            <h2>Питание</h2>
-            <ul class="sidebar">
-              <li>
-                <input type="radio" id="battery" name="power">
-                <label for="battery">Аккамуляторные</label>
-              </li>
-              <li>
-                <input type="radio" id="wire-power" name="power" checked>
-                <label for="wire-power">Сетевые</label>
-              </li>
-            </ul>
+            <fieldset>
+              <legend>Производители</legend>
+              <ul class="sidebar">
+                <li>
+                  <input type="checkbox" id="bosch" name="producer" checked>
+                  <label for="bosch">Bosch</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="interskol" name="producer">
+                  <label for="interskol">Интерскол</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="dewalt" name="producer" checked>
+                  <label for="dewalt">Dewalt</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="hitachi" name="producer">
+                  <label for="hitachi">Hitachi</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Питание</legend>
+              <ul class="sidebar">
+                <li>
+                  <input type="radio" id="battery" name="power">
+                  <label for="battery">Аккамуляторные</label>
+                </li>
+                <li>
+                  <input type="radio" id="wire-power" name="power" checked>
+                  <label for="wire-power">Сетевые</label>
+                </li>
+              </ul>
+            </fieldset>
             <button class="btn" type="submit">Показать</button>
           </form>
         </aside>
