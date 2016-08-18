@@ -55,7 +55,8 @@ h3 {
 	clear: both;
 }
 
-body li {
+ul,
+li {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -182,16 +183,20 @@ body li {
 
 /* Слайдер */
 
+.feature-slider {
+	position: relative;
+	float: left;
+	margin-right: 20px;
+	width: 620px;
+	height: 266px;
+}
+
 .feature-slider li:not(.active) {
 	display: none;
 }
 
 .feature-slider li.active {
   position: relative;
-	float: left;
-	margin-right: 20px;
-	width: 620px;
-	height: 266px;
   color: #fff;
 }
 
@@ -207,12 +212,39 @@ body li {
 	z-index: 2;
 }
 
-                      /*НЕ ПОНИМАЮ, ул куда-то выпал, почему?*/
 .btn-controllers {
   position: absolute;
+	top: 50%;
 	left: 0;
-	right: 0;
 	z-index: 1;
+	width: 100%;
+}
+
+.btn-controllers a {
+	font-size: 20px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.control-left {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.control-right {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.btn-slide-catalog {
+	position: absolute;
+	left: 24px;
+	top: 205px;
+	z-index: 2;
+	color: #FFF;
+	text-decoration: none;
 }
 
 /* Блок популярные товары и производители */
@@ -231,7 +263,7 @@ body li {
 .popular-producers-title h2 {
   padding-left: 20px;
   padding-top: 25px;
-  padding-bottom: 30px;
+  padding-bottom: 15px;
 }
 
 .popular-item {
