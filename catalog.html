@@ -8,7 +8,7 @@
 
 <body>
   <header>
-    <div class="container">
+    <div class="container clearfix">
 
       <div class="header-top">
         <div class="logo">
@@ -112,10 +112,11 @@
           <form action="https://echo.htmlacademy.ru" method="post">
             <div class="filter-price">
               <div>Цена:</div>
-              <input type="range" min="0" max="50000" step="500">
-              <input type="range" min="0" max="50000" step="500">
-              <output name="min">0</output>
-              <output name="sum">30000</output>
+              <div class="filter-scroll-grey">
+                <div class="filter-scroll-green"></div>
+              </div>
+              <input class="filter-input" type="text" name="min-sum" value="0">
+              <input class="filter-input" type="text" name="max-sum" value="50000">
             </div>
             <fieldset>
               <legend>Производители</legend>
@@ -157,8 +158,8 @@
 
         <section class="catalog-items">
 
-          <div class="catalog-items-filter">
-            <h2>Сортировка:</h2>
+          <div class="catalog-items-filter clearfix">
+            <div class="filter-title">Сортировка:</div>
             <ul>
               <li>
                 <span>По цене</span>
@@ -178,10 +179,10 @@
             </ul>
           </div>
 
-          <section class="catalog-items-set">
+          <section class="catalog-items-set clearfix">
             <article class="catalog-item">
               <figure>
-                <img src="img/item-BFG3000.jpg" alt="Перфоратор BOSCH BFG 3000" width="220" height="130">
+                <img src="img/item-2.jpg" alt="Перфоратор BOSCH BFG 3000" width="220" height="130">
               </figure>
               <h3>Перфоратор BOSCH BFG 3000</h3>
               <span class="prev-price">22500</span>
@@ -189,7 +190,7 @@
             </article>
             <article class="catalog-item">
               <figure>
-                <img src="img/item-BFG6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="220" height="130">
+                <img src="img/item-2.jpg" alt="Перфоратор BOSCH BFG 6000" width="220" height="130">
               </figure>
               <h3>Перфоратор BOSCH BFG 6000</h3>
               <span class="prev-price">30500</span>
@@ -203,7 +204,7 @@
             </article>
             <article class="catalog-item">
               <figure>
-                <img src="img/item-BFG3000.jpg" alt="Перфоратор BOSCH BFG 3000" width="220" height="130">
+                <img src="img/item-3.jpg" alt="Перфоратор BOSCH BFG 3000" width="220" height="130">
               </figure>
               <h3>Перфоратор BOSCH BFG 3000</h3>
               <span class="prev-price">22500</span>
@@ -211,7 +212,7 @@
             </article>
             <article class="catalog-item new-item">
               <figure>
-                <img src="img/item-BFG6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="220" height="130">
+                <img src="img/item-3.jpg" alt="Перфоратор BOSCH BFG 6000" width="220" height="130">
               </figure>
               <h3>Перфоратор BOSCH BFG 6000</h3>
               <span class="prev-price">30500</span>
@@ -219,14 +220,14 @@
             </article>
             <article class="catalog-item">
               <figure>
-                <img src="img/item-BFG2000.jpg" alt="Перфоратор BOSCH BFG 2000" width="220" height="130">
+                <img src="img/item-3.jpg" alt="Перфоратор BOSCH BFG 2000" width="220" height="130">
               </figure>
               <h3>Перфоратор BOSCH BFG 2000</h3>
               <span class="current-price">12500 P.</span>
             </article>
             <article class="catalog-item new-item">
               <figure>
-                <img src="img/item-BFG3000.jpg" alt="Перфоратор BOSCH BFG 3000" width="220" height="130">
+                <img src="img/item-3.jpg" alt="Перфоратор BOSCH BFG 3000" width="220" height="130">
               </figure>
               <h3>Перфоратор BOSCH BFG 3000</h3>
               <span class="prev-price">22500</span>
@@ -234,7 +235,7 @@
             </article>
             <article class="catalog-item">
               <figure>
-                <img src="img/item-BFG6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="220" height="130">
+                <img src="img/item-4.jpg" alt="Перфоратор BOSCH BFG 6000" width="220" height="130">
               </figure>
               <h3>Перфоратор BOSCH BFG 6000</h3>
               <span class="prev-price">30500</span>
@@ -242,7 +243,7 @@
             </article>
             <article class="catalog-item">
               <figure>
-                <img src="img/item-BFG2000.jpg" alt="Перфоратор BOSCH BFG 2000" width="220" height="130">
+                <img src="img/item-2.jpg" alt="Перфоратор BOSCH BFG 2000" width="220" height="130">
               </figure>
               <h3>Перфоратор BOSCH BFG 2000</h3>
               <span class="current-price">12500 P.</span>
@@ -284,11 +285,11 @@
       <footer class="main-footer">
         <div class="container">
 
-          <div class="footer-top">
+          <div class="footer-top clearfix">
             <div class="logo">
-              <img src="img/index-logo-footer.jpg" width="220" height="69" alt="Техномарт">
+              Техномарт
             </div>
-            <ul>
+            <ul class="footer-menu">
               <li>
                 <a href="#">Компания</a>
               </li>
@@ -307,13 +308,12 @@
             </ul>
           </div>
 
-          <div class="footer-middle">
+          <div class="footer-middle clearfix">
             <div class="footer-address">
-              <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-                +7 (812) 555-05-55
-              </p>
+              <div>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
+              <div>+7 (812) 555-05-55</div>
             </div>
-            <ul>
+            <ul class="footer-menu">
               <li>
                 <a href="#">Материалы</a>
               </li>
@@ -329,27 +329,27 @@
             </ul>
           </div>
 
-          <div class="footer-bottom">
+          <div class="footer-bottom clearfix">
             <div class="footer-copyright">
-              <p>© 2010–2016 Компания «Техномарт»
-                Все права защищены</p>
-              </div>
-              <div class="footer-social">
-                <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-                <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-                <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-              </div>
-              <div class="footer-feedback">
-                <p>Обратная связь:</p>
-                  <a href="#">mail@htmlacademy.ru</a>
-                </div>
-                <div class="footer-developers">
-                  <p>Разработано-</p>
-                  <a href="https://htmlacademy.ru">htmlacademy.ru</a>
-                </div>
-              </div>
-
+              <div>© 2010–2016 Компания «Техномарт»</div>
+              <div>Все права защищены</div>
             </div>
-          </footer>
+            <div class="footer-social">
+              <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+              <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+              <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+            </div>
+            <div class="footer-feedback">
+              <div>Обратная связь:</div>
+              <a href="#">mail@htmlacademy.ru</a>
+            </div>
+            <div class="footer-developers">
+              <div>Разработано-</div>
+              <a href="https://htmlacademy.ru">htmlacademy.ru</a>
+            </div>
+          </div>
+
+        </div>
+      </footer>
 </body>
 </html>

@@ -8,8 +8,8 @@
 body {
   font-size: 13px;
   line-height: 24px;
+  font-family: PT Sans, Helvetica, Arial;
   color: #000000;
-  font-family: Cuprum, Helvetica, Arial;
 }
 
 h1 {
@@ -22,11 +22,13 @@ h2 {
   font-size: 30px;
   line-height: 24px;
   font-family: PT Sans, Helvetica, Arial;
+  padding-bottom: 15px;
 }
 
 h3 {
-  font-size: 24px;
-  line-height: 30px;
+  font-size: 18px;
+  line-height: 20px;
+  padding-bottom: 20px;
   color: #000;
 }
 
@@ -36,7 +38,8 @@ h3 {
 .popular-producers-title,
 .footer-top,
 .footer-bottom,
-.footer-middle {
+.footer-middle,
+.catalog-items-filter {
 	width: 100%;
 }
 
@@ -44,7 +47,6 @@ h3 {
 	width: 940px;
 	margin: 0 auto;
 	padding: 0 10px;
-  background-color: lightyellow; /* для наглядности */
 }
 
 .clearfix {
@@ -53,17 +55,23 @@ h3 {
 	clear: both;
 }
 
+body li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 /* Шапка сайта*/
 
 .header-top {
-	margin-bottom: 46px;
+  background-color: #293449;
 }
 
 .logo {
 	float: left;
 	margin-right: 10px;
 	width: 220px;
-  height: 70px;
+  height: 42px;
 }
 
 .search {
@@ -77,9 +85,12 @@ h3 {
 .menu li {
 	display: inline-block;
 	vertical-align: top;
-	list-style: none;
 }
 
+.header-bottom {
+  background-color: #f1f5f7;
+  padding-top: 46px;
+}
 .header-description {
 	float: left;
 	width: 300px;
@@ -111,21 +122,19 @@ h3 {
 .main-navigation li {
 	display: inline-block;
 	vertical-align: top;
-	list-style: none;
 }
 
 /* Личный кабинет */
 
 .user-set {
-    position: absolute;
-    top: 30px;
-    left: 40px;
+  position: absolute;
+  top: 30px;
+  left: 40px;
 }
 
 .user-set li {
   display: inline-block;
   vertical-align: top;
-  list-style: none;
 }
 
 /* Шапка страницы каталог*/
@@ -133,11 +142,11 @@ h3 {
 .breadcrumbs li {
  display: inline-block;
  vertical-align: top;
- list-style: none;
 }
 
 .breadcrumbs {
-  height: 60px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .header-catalog h1 {
@@ -148,7 +157,7 @@ h3 {
 /* Блок особенности */
 
 .features {
-	margin-bottom: 54px;
+	padding-bottom: 54px;
   padding-top: 60px;
 }
 
@@ -157,7 +166,7 @@ h3 {
 	margin-bottom: 20px;
 	margin-right: 20px;
 	width: 300px;
-	height: 124px;
+	min-height: 124px;
 	background-color: lightgreen; /* для наглядности*/
 }
 
@@ -171,19 +180,19 @@ h3 {
 	margin-bottom: 0;
 }
 
-.feature-slider .active {
+/* Слайдер */
+
+.feature-slider li:not(.active) {
+	display: none;
+}
+
+.feature-slider li.active {
+  position: relative;
 	float: left;
 	margin-right: 20px;
 	width: 620px;
 	height: 266px;
-}
-
-.feature-slider li {
-	list-style: none;
-}
-
-.feature-slids {
-	position: relative;
+  color: #fff;
 }
 
 .slide-img {
@@ -193,26 +202,17 @@ h3 {
 	z-index: 1;
 }
 
-.slide-title,
-.btn-slide {
+.slide-title {
 	position: relative;
 	z-index: 2;
 }
 
-.feature-slids li:not(.active) {
-	display: none;
-}
-
-.control-left {
+                      /*НЕ ПОНИМАЮ, ул куда-то выпал, почему?*/
+.btn-controllers {
   position: absolute;
-  left: 0;
-  z-index: 3;
-}
-
-.control-right {
-  position: absolute;
-  right: 0;
-  z-index: 3;
+	left: 0;
+	right: 0;
+	z-index: 1;
 }
 
 /* Блок популярные товары и производители */
@@ -224,7 +224,14 @@ h3 {
 
 .popular-items-title,
 .popular-producers-title {
-	margin-bottom: 20px;
+  background-color: #f7f3ec;
+}
+
+.popular-items-title h2,
+.popular-producers-title h2 {
+  padding-left: 20px;
+  padding-top: 25px;
+  padding-bottom: 30px;
 }
 
 .popular-item {
@@ -232,7 +239,6 @@ h3 {
 	margin-right: 20px;
   margin-bottom: 21px;
 	width: 220px;
-	height: 318px;
 }
 
 .popular-item:last-child {
@@ -240,7 +246,7 @@ h3 {
 }
 
 .popular-producers {
-	margin-bottom: 65px;
+	padding-bottom: 65px;
 }
 
 .popular-producers-list li {
@@ -249,7 +255,6 @@ h3 {
   margin-bottom: 20px;
 	width: 220px;
 	height: 145px;
-	list-style: none;
   background-color: #FFFFFF;
 }
 
@@ -258,24 +263,20 @@ h3 {
 	margin-right: 0;
 }
 
-/* Блок сервисы */
+/* Блок сервисы - слайдер */
 
 .services {
-	margin-bottom: 70px;
-}
-
-.services-slids li {
-	list-style: none;
-}
-
-.services-text,
-.services-img {
-	display: none;
+	padding-bottom: 70px;
+  background-color: #f2f6f8;
 }
 
 .service-title {
-	width: 360px;  /** по макету 400px **/
+	width: 400px;
 	margin-bottom: 65px;
+}
+
+.services-slids li {
+  padding: 15px;
 }
 
 .services-slide {
@@ -284,13 +285,32 @@ h3 {
 	width: 240px;
 }
 
-.services-text {
-	float: left;
+.services-text p {
+  width: 320px;
+  padding-bottom: 102px;
 }
 
-.services-img {
-	float: left;
+.services-slids li:not(.active) .services-text{
+  display: none;
 }
+
+.services li.active .services-text {
+  float: right;
+  width: 640px;
+}
+
+.services-delivery {
+  background: url(../img/delivery-services.png) no-repeat 100% 0;
+}
+
+.services-guarantee {
+  background: url(../img/guarantee-services.png) no-repeat 100% 0;
+}
+
+.services-credit {
+  background: url(../img/credit-services.png) no-repeat 100% 0;
+}
+
 
 /* Блок о компании*/
 
@@ -316,26 +336,106 @@ h3 {
 
 /* Боковой филтер блока каталог */
 
+fieldset {
+  border: 0;
+}
+
 .catalog-filter {
   float: left;
   width: 220px;
   margin-right: 20px;
 }
 
-.catalog-filter li {
-  list-style: none;
+.filter-scroll-grey {
+  position: relative;
+  width: 170px;
+  height: 2px;
+  background-color: #d7dcde;
+  margin: 30px 15px;
 }
 
-/* Блока каталог */
+.filter-scroll-green {
+  width: 120px;
+  height: 2px;
+  background-color: #00ca74;
+}
+
+.filter-scroll-grey:after,
+.filter-scroll-grey:before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.filter-scroll-grey:before {
+  right: 30px;
+}
+
+.filter-input {
+  display: inline-block;
+  width: 96px;
+}
+
+/* Блок каталог */
 
 .catalog-items {
+  float: left;
   width: 700px;
 }
 
 .catalog-items-filter li {
   display: inline-block;
   vertical-align: top;
-  list-style: none;
+}
+
+.catalog-items-filter ul {
+  float: right;
+}
+
+.filter-title {
+  float: left;
+}
+
+/* Каталог товаров */
+
+.catalog-items-set {
+  margin-bottom: 52px;
+}
+
+.catalog-items-set article {
+  float: left;
+  width: 220px;
+  margin-right: 20px;
+}
+
+.catalog-items-set article:nth-child(3n+3) {
+  margin-right: 0;
+}
+
+/* Пагинация каталога товаров*/
+
+.pagination {
+  margin-bottom: 60px;
+}
+
+.pagination li {
+  display: inline-block;
+}
+
+/* Дополнительный блок под каталогом*/
+
+.sub-catalog h2 {
+  padding-top: 60px;
+}
+
+.sub-catalog p {
+  padding-bottom: 63px;
 }
 
 /* Подвал сайта */
@@ -343,7 +443,6 @@ h3 {
 .footer-top li {
 	display: inline-block;
 	vertical-align: top;
-  list-style: none;
 }
 
 .footer-top {
@@ -357,7 +456,6 @@ h3 {
 .footer-middle li {
   display: inline-block;
 	vertical-align: top;
-  list-style: none;
 }
 
 .footer-menu {
@@ -375,14 +473,13 @@ h3 {
   margin-right: 150px;
 }
 
-.footer-socials {
+.footer-social {
   float: left;
 }
 
 .footer-feedback {
   float: right;
   width: 140px;
-
 }
 
 .footer-developers {
