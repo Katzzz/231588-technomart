@@ -22,7 +22,6 @@ h2 {
   font-size: 30px;
   line-height: 24px;
   font-family: PT Sans, Helvetica, Arial;
-  padding-bottom: 15px;
 }
 
 h3 {
@@ -215,13 +214,15 @@ li {
 .btn-controllers {
   position: absolute;
 	top: 50%;
+	transform: translateY(-50%);
+	height: 40px;
 	left: 0;
 	z-index: 1;
 	width: 100%;
 }
 
 .btn-controllers a {
-	font-size: 20px;
+	font-size: 40px;
 	color: #fff;
 	text-decoration: none;
 }
@@ -261,9 +262,10 @@ li {
 
 .popular-items-title h2,
 .popular-producers-title h2 {
+	float: left;
   padding-left: 20px;
   padding-top: 25px;
-  padding-bottom: 15px;
+  padding-bottom: 30px;
 }
 
 .popular-item {
@@ -298,6 +300,7 @@ li {
 /* Блок сервисы - слайдер */
 
 .services {
+	position: relative;
 	padding-bottom: 70px;
   background-color: #f2f6f8;
 }
@@ -307,28 +310,27 @@ li {
 	margin-bottom: 65px;
 }
 
-.services-slids li {
-  padding: 15px;
+.services ul {
+	position: relative;
+	width: 100%;
+	min-height: 240px;
 }
 
-.services-slide {
-	float: left;
-	margin-right: 60px;
-	width: 240px;
-}
-
-.services-text p {
-  width: 320px;
-  padding-bottom: 102px;
-}
-
-.services-slids li:not(.active) .services-text{
-  display: none;
+.services li .services-text {
+	position: absolute;
+	display: none;
+	right: 0;
+	top: 0;
+	width: 620px;
+	min-height: 240px;
 }
 
 .services li.active .services-text {
-  float: right;
-  width: 640px;
+	display: block;
+}
+
+.services-text p {
+	width: 301px;
 }
 
 .services-delivery {
@@ -403,6 +405,7 @@ fieldset {
   height: 20px;
   border-radius: 50%;
   background-color: #fff;
+	background-color: #b7b7b7;
 }
 
 .filter-scroll-grey:before {
