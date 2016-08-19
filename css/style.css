@@ -152,6 +152,7 @@ li {
 .header-catalog h1 {
   padding: 25px;
   margin-bottom: 20px;
+  background-color: #f2f6f8;
 }
 
 /* Блок особенности */
@@ -459,6 +460,15 @@ fieldset {
   margin-right: 0;
 }
 
+.catalog-item-btn {
+  padding-top: 43px;
+  padding-bottom: 43px;
+}
+
+.item-btn {
+  display: table;
+}
+
 /* Пагинация каталога товаров*/
 
 .pagination {
@@ -470,6 +480,10 @@ fieldset {
 }
 
 /* Дополнительный блок под каталогом*/
+
+.sub-catalog {
+  background-color: #f2f6f8;
+}
 
 .sub-catalog h2 {
   padding-top: 60px;

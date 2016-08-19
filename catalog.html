@@ -8,9 +8,8 @@
 
 <body>
   <header>
-    <div class="container clearfix">
-
-      <div class="header-top">
+    <div class="header-top">
+      <div class="container clearfix">
         <div class="logo">
           Техномарт
         </div>
@@ -29,8 +28,10 @@
           </li>
         </ul>
       </div>
+    </div>
 
-      <div class="header-bottom clearfix">
+    <div class="header-bottom">
+      <div class="container clearfix">
         <div class="header-description">
           <p>Интернет-магазин
             строительных материалов
@@ -105,15 +106,17 @@
         <h1>Перфораторы</h1>
       </header>
 
-      <section class="catalog">
+      <section class="catalog clearfix">
 
         <aside class="catalog-filter">
-          <span>Фильтр</span>
+          <div>Фильтр</div>
           <form action="https://echo.htmlacademy.ru" method="post">
             <div class="filter-price">
               <div>Цена:</div>
-              <div class="filter-scroll-grey">
-                <div class="filter-scroll-green"></div>
+              <div class="filter-scroll">
+                <div class="filter-scroll-grey">
+                  <div class="filter-scroll-green"></div>
+                </div>
               </div>
               <input class="filter-input" type="text" name="min-sum" value="0">
               <input class="filter-input" type="text" name="max-sum" value="50000">
@@ -197,8 +200,10 @@
               <span class="current-price">25500 P.</span>
             </article>
             <article class="catalog-item new-item">
-              <button type="button" class="btn-buy">Купить</button>
-              <button type="button" class="btn-buy">Купить</button>
+              <div class="catalog-item-btn">
+                <button type="button" class="item-btn btn-buy">Купить</button>
+                <button type="button" class="item-btn btn-bookmark">Закладка</button>
+              </div>
               <h3>Перфоратор BOSCH BFG 2000</h3>
               <span class="current-price">12500 P.</span>
             </article>
@@ -271,21 +276,23 @@
 
       </section>
 
-      <div class="sub-catalog">
+    </main>
+
+    <div class="sub-catalog">
+      <div class="container">
         <h2>Пара слов о перфораторах</h2>
         <p>Перфоратор — универсальный строительный инструмент.
           Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
           Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять
           функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»:
           в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
-        </div>
-
-      </main>
+      </div>
+    </div>
 
       <footer class="main-footer">
-        <div class="container">
 
-          <div class="footer-top clearfix">
+        <div class="footer-top">
+          <div class="container clearfix">
             <div class="logo">
               Техномарт
             </div>
@@ -307,8 +314,10 @@
               </li>
             </ul>
           </div>
+        </div>
 
-          <div class="footer-middle clearfix">
+        <div class="footer-middle">
+          <div class="container clearfix">
             <div class="footer-address">
               <div>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
               <div>+7 (812) 555-05-55</div>
@@ -328,8 +337,10 @@
               </li>
             </ul>
           </div>
+        </div>
 
-          <div class="footer-bottom clearfix">
+        <div class="footer-bottom">
+          <div class="container clearfix">
             <div class="footer-copyright">
               <div>© 2010–2016 Компания «Техномарт»</div>
               <div>Все права защищены</div>
@@ -348,8 +359,9 @@
               <a href="https://htmlacademy.ru">htmlacademy.ru</a>
             </div>
           </div>
-
         </div>
+
+
       </footer>
-</body>
-</html>
+    </body>
+    </html>
