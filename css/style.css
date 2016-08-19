@@ -258,6 +258,7 @@ li {
 .popular-items-title,
 .popular-producers-title {
   background-color: #f7f3ec;
+  margin-bottom: 21px;
 }
 
 .popular-items-title h2,
@@ -303,6 +304,11 @@ li {
 	position: relative;
 	padding-bottom: 70px;
   background-color: #f2f6f8;
+}
+
+.services h2 {
+  padding-top: 55px;
+  padding-bottom: 20px;
 }
 
 .service-title {
@@ -475,13 +481,23 @@ fieldset {
 
 /* Подвал сайта */
 
+.main-footer {
+  color: #fff;
+}
+
+.main-footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-top,
+.footer-middle {
+  background-color: #32425c;
+}
+
 .footer-top li {
 	display: inline-block;
 	vertical-align: top;
-}
-
-.footer-top {
-  margin-bottom: 25px;
 }
 
 .footer-address {
@@ -500,6 +516,7 @@ fieldset {
 .footer-bottom {
   padding-top: 25px;
   padding-bottom: 25px;
+  background-color: #293449;
 }
 
 .footer-copyright {
