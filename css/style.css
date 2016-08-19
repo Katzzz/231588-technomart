@@ -258,6 +258,7 @@ li {
 .popular-items-title,
 .popular-producers-title {
   background-color: #f7f3ec;
+	margin-bottom: 20px;
 }
 
 .popular-items-title h2,
@@ -350,11 +351,11 @@ li {
 
 .index-info {
   padding-bottom: 75px;
+	padding-top: 70px;
 }
 
 .index-info h2 {
   padding-bottom: 20px;
-  padding-top: 70px;
 }
 
 .index-info-company {
