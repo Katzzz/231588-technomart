@@ -152,6 +152,7 @@ li {
 .header-catalog h1 {
   padding: 25px;
   margin-bottom: 20px;
+  background-color: #f2f6f8;
 }
 
 /* Блок особенности */
@@ -306,6 +307,11 @@ li {
   background-color: #f2f6f8;
 }
 
+.services h2 {
+  padding-top: 55px;
+  padding-bottom: 20px;
+}
+
 .service-title {
 	width: 400px;
 	margin-bottom: 65px;
@@ -454,6 +460,15 @@ fieldset {
   margin-right: 0;
 }
 
+.catalog-item-btn {
+  padding-top: 43px;
+  padding-bottom: 43px;
+}
+
+.item-btn {
+  display: table;
+}
+
 /* Пагинация каталога товаров*/
 
 .pagination {
@@ -466,8 +481,13 @@ fieldset {
 
 /* Дополнительный блок под каталогом*/
 
+.sub-catalog {
+  background-color: #f2f6f8;
+}
+
 .sub-catalog h2 {
   padding-top: 60px;
+  padding-bottom: 25px;
 }
 
 .sub-catalog p {
@@ -476,13 +496,23 @@ fieldset {
 
 /* Подвал сайта */
 
+.main-footer {
+  color: #fff;
+}
+
+.main-footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-top,
+.footer-middle {
+  background-color: #32425c;
+}
+
 .footer-top li {
 	display: inline-block;
 	vertical-align: top;
-}
-
-.footer-top {
-  margin-bottom: 25px;
 }
 
 .footer-address {
@@ -501,6 +531,7 @@ fieldset {
 .footer-bottom {
   padding-top: 25px;
   padding-bottom: 25px;
+  background-color: #293449;
 }
 
 .footer-copyright {
