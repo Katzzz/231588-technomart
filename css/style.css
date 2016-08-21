@@ -319,7 +319,6 @@ h3 {
 }
 
 .services-slider ul {
-	position: relative;
 	width: 100%;
 	min-height: 240px;
 	margin: 0;
@@ -327,16 +326,23 @@ h3 {
 	list-style: none;
 }
 
-.services li .services-text {
-	position: absolute;
-	display: none;
-	right: 0;
-	top: 0;
-	width: 620px;
-	min-height: 240px;
+.services-list {
+	float: left;
+	width: 240px;
 }
 
-.services li.active .services-text {
+.services-slids {
+	float: right;
+	width: 620px;
+}
+
+.services-text {
+	display: none;
+	width: 620px;
+	float: left;
+}
+
+.services-delivery {
 	display: block;
 }
 
@@ -346,14 +352,17 @@ h3 {
 
 .services-delivery {
   background: url(../img/delivery-services.png) no-repeat 100% 0;
+	height: 261px;
 }
 
 .services-guarantee {
   background: url(../img/guarantee-services.png) no-repeat 100% 0;
+	height: 283px;
 }
 
 .services-credit {
   background: url(../img/credit-services.png) no-repeat 100% 0;
+	height: 285px;
 }
 
 
