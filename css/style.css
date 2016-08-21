@@ -513,10 +513,15 @@ fieldset {
 .footer-top li {
 	display: inline-block;
 	vertical-align: top;
+	padding-top: 35px;
 }
 
 .footer-address {
   float: left;
+}
+
+.footer-middle {
+	padding-top: 25px;
 }
 
 .footer-middle li {
