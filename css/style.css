@@ -352,17 +352,17 @@ h3 {
 
 .services-delivery {
   background: url(../img/delivery-services.png) no-repeat 100% 0;
-	height: 261px;
+	min-height: 261px;
 }
 
 .services-guarantee {
   background: url(../img/guarantee-services.png) no-repeat 100% 0;
-	height: 283px;
+	min-height: 283px;
 }
 
 .services-credit {
   background: url(../img/credit-services.png) no-repeat 100% 0;
-	height: 285px;
+	min-height: 285px;
 }
 
 
