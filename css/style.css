@@ -3,31 +3,89 @@
  margin: 0;
 }
 
+/* Шрифтовые иконки*/
+
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+
+  font-family: "symbols-technomart";
+  src: url("../fonts/symbols-technomart.woff") format("woff"),
+       url("../fonts/symbols-technomart.woff2") format("woff2");
+}
+
+[class^="icon-"]::before,
+[class*=" icon-"]::before {
+  display: inline-block;
+  width: 1em;
+  margin-right: 0.2em;
+  margin-left: 0.2em;
+
+  font-weight: normal;
+  line-height: 1em;
+  font-family: "symbols-technomart";
+  text-align: center;
+  text-transform: none;
+  text-decoration: inherit;
+  font-style: normal;
+  font-variant: normal;
+
+  speak: none;
+}
+
+.icon-left::before { content: "\3c"; } /* "&lt;" */
+.icon-right::before { content: "\3e"; } /* "&gt;" */
+.icon-basket::before { content: "\62"; } /* "b" */
+.icon-facebook::before { content: "\66"; } /* "f" */
+.icon-twitter::before { content: "\74"; } /* "t" */
+.icon-vk::before { content: "\76"; } /* "v" */
+.icon-up::before { content: "\2c4"; } /* "˄" */
+.icon-down::before { content: "\2c5"; } /* "˅" */
+.icon-left-big::before { content: "\2190"; } /* "←" */
+.icon-right-big::before { content: "\2192"; } /* "→" */
+.icon-login::before { content: "\2386"; } /* "⎆" */
+.icon-logout::before { content: "\241b"; } /* "␛" */
+.icon-up-dir::before { content: "\25b2"; } /* "▲" */
+.icon-down-dir::before { content: "\25bc"; } /* "▼" */
+.icon-circle::before { content: "\25cb"; } /* "○" */
+.icon-circle-dot::before { content: "\25cf"; } /* "●" */
+.icon-star::before { content: "\2605"; } /* "★" */
+.icon-check-off::before { content: "\2610"; } /* "☐" */
+.icon-check-on::before { content: "\2611"; } /* "☑" */
+.icon-youtube::before { content: "\f39e"; } /* "" */
+.icon-home::before { content: "🏠"; } /* "\1f3e0" */
+.icon-user::before { content: "👨"; } /* "\1f468" */
+.icon-phone::before { content: "📞"; } /* "\1f4de" */
+.icon-instagramm::before { content: "📷"; } /* "\1f4f7" */
+.icon-search::before { content: "🔍"; } /* "\1f50d" */
+.icon-bookmark::before { content: "🔖"; } /* "\1f516" */
+
+
 /* Блок общее */
 
 body {
-  font-size: 13px;
-  line-height: 24px;
-  font-family: PT Sans, Helvetica, Arial;
+  min-width: 960px;
+
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 18px;
+  font-family: "Cuprum", sans-serif;
+
   color: #000000;
 }
 
-h1 {
+h1,
+h2 {
   font-size: 30px;
   line-height: 30px;
   color: #32425c;
 }
 
-h2 {
-  font-size: 30px;
-  line-height: 24px;
-  font-family: PT Sans, Helvetica, Arial;
-}
-
 h3 {
   font-size: 18px;
   line-height: 20px;
-  padding-bottom: 20px;
+  font-weight: bold;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
   color: #000;
 }
 
@@ -47,18 +105,66 @@ h3 {
 
 .header-top {
   background-color: #293449;
+  color: #fff;
+}
+
+.header-top a {
+  color: #fff;
+  text-decoration: none;
 }
 
 .logo {
 	float: left;
-	margin-right: 10px;
 	width: 220px;
-  height: 42px;
+
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+
+  padding: 12px 0;
+
+  background-color: #ee3643;
+  box-shadow: 0 5px #b52933;
 }
 
 .search {
 	float: left;
+  width: 230px;
+  padding: 12px 0;
 }
+
+
+/*input[type="text"] {
+  position: relative;
+  background-color: #293449;
+
+  padding: 5px 0;
+  padding-left: 40px;
+  border: 0;
+
+  color: #fff;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 18px;
+  font-family: "Cuprum", sans-serif;
+}
+
+input[type="text"]:active {
+  border: 0;
+}
+
+input[type="text"]::before{
+  content: '\1f50d';
+  position: absolute;
+
+  top: 0;
+  left: 10px;
+
+  width: 20px;
+  height: 20px;
+}*/
 
 .menu {
 	float: right;
@@ -69,19 +175,59 @@ h3 {
   margin: 0;
   padding: 0;
 }
+
 .menu li {
 	display: inline-block;
 	vertical-align: top;
+
+  width: 90px;
+  padding: 15px 10px;
+  padding-left: 40px;
+}
+
+.menu li:hover {
+  background-color: #212a3a;
+}
+
+.menu li.active {
+  background-color: #161d29;
+}
+
+.menu li:last-child {
+  width: 150px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 15px 20px;
+
+  background-color: #63a63e;
+}
+
+.menu li:last-child:hover {
+  background-color: #5fbb2d;
+}
+
+.menu li.active {
+  background-color: #518534;
+}
+
+.menu a.active {
+  opacity: 0.5;
 }
 
 .header-bottom {
   background-color: #f1f5f7;
-  padding-top: 46px;
+  padding-top: 47px;
 }
+
 .header-description {
 	float: left;
-	width: 300px;
+	width: 200px;
 	margin-right: 20px;
+  padding: 0 50px;
+
+  font-size: 16px;
+  line-height: 23px;
+  color: #ee3643;
 }
 
 .header-contacts {
@@ -90,10 +236,56 @@ h3 {
 	margin-right: 20px;
 }
 
-.user-block {
+.header-phone span {
   position: relative;
+  padding: 15px 50px;
+  padding-left: 70px;
+
+  background-color: #f1f5f7;
+  box-shadow: inset 0 0 0 5px #fff;
+  color: #e9292a;
+  font-size: 21px;
+  line-height: 18px;
+}
+
+.header-phone span::after {
+  content: '\1f4de';
+  position: absolute;
+  top: 15px;
+  left: 15px;
+
+  font-size: 22px;
+  line-height: 18px;
+  color: #b7bfc8;
+}
+
+.header-contacts p {
+  margin-top: 10px;
+  padding: 0 5px;
+
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425c;
+}
+
+.user-block {
 	float: right;
-	width: 300px;
+}
+
+.user-block a {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #fff;
+
+  font-size: 21px;
+  line-height: 18px;
+  color: #000;
+
+  text-decoration: none;
+}
+
+.user-block .login {
+  padding-left: 47px;
 }
 
 .user-profile {
@@ -101,14 +293,28 @@ h3 {
 }
 
 .main-navigation {
-	float: left;
-	margin-top: 35px;
+  float: left;
+	margin-top: 40px;
 	margin-bottom: 60px;
+
+  font-size: 0;
+  box-shadow: 0 5px #293449;
 }
 
 .main-navigation li {
 	display: inline-block;
 	vertical-align: top;
+  padding: 10px 30px;
+
+  font-size: 17px;
+  line-height: 17px;
+  text-align: center;
+  background-color: #32425c;
+}
+
+.main-navigation a {
+  color: #fff;
+  text-decoration: none;
 }
 
 /* Личный кабинет */
@@ -153,6 +359,8 @@ h3 {
 .features {
 	padding-bottom: 54px;
   padding-top: 60px;
+
+  color: #fff;
 }
 
 .features-one {
@@ -169,12 +377,34 @@ h3 {
 	float: left;
 	margin-bottom: 20px;
 	width: 300px;
+
+  font-size: 24px;
+  line-height: 30px;
 	min-height: 124px;
-	background-color: lightgreen; /* для наглядности*/
 }
 
 .features-one .item-features:first-child {
 	margin-right: 20px;
+}
+
+.materials {
+  background-color: #f6b22d;
+}
+
+.tools {
+  background-color: #4aafde;
+}
+
+.technics {
+  background-color: #cc79d1;
+}
+
+.many-items {
+  background-color: #85d179;
+}
+
+.for-free {
+  background-color: #f6b22d;
 }
 
 /* Слайдер */
