@@ -66,10 +66,10 @@
 body {
   min-width: 960px;
 
-  font-weight: 400;
+  font-weight: normal;
   font-size: 17px;
   line-height: 18px;
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
 
   color: #000000;
 }
@@ -124,7 +124,7 @@ h3 {
   text-transform: uppercase;
   color: #fff;
 
-  padding: 12px 0;
+  padding: 10px 0;
 
   background-color: #ee3643;
   box-shadow: 0 5px #b52933;
@@ -132,10 +132,8 @@ h3 {
 
 .search {
 	float: left;
-  width: 230px;
-  padding: 12px 0;
+  padding: 10px 0;
 }
-
 
 /*input[type="text"] {
   position: relative;
@@ -168,10 +166,8 @@ input[type="text"]::before{
 }*/
 
 .menu {
-	float: right;
-}
+  float: right;
 
-.menu ul {
 	list-style: none;
   margin: 0;
   padding: 0;
@@ -180,10 +176,10 @@ input[type="text"]::before{
 .menu li {
 	display: inline-block;
 	vertical-align: top;
+  text-align: center;
 
-  width: 90px;
-  padding: 15px 10px;
-  padding-left: 40px;
+  width: 150px;
+  padding: 10px 0;
 }
 
 .menu li:hover {
@@ -196,9 +192,8 @@ input[type="text"]::before{
 
 .menu li:last-child {
   width: 150px;
-  text-align: center;
   vertical-align: middle;
-  padding: 15px 20px;
+  padding: 14px 20px;
 
   background-color: #63a63e;
 }
