@@ -150,22 +150,7 @@ h3 {
 	float: left;
 }
 
-.search input[type="text"] {
-  position: relative;
-}
-
-.search input[type="text"]::before {
-  content: '\1f50d';
-  position: absolute;
-
-  top: 0;
-  left: 0;
-
-  color: #fff;
-  opacity: 0.3;
-}
-
-.search input[type="text"]:after:focus {
+.icon-search:focus {
   color: #ee3643;
 }
 
@@ -196,7 +181,7 @@ h3 {
 
 /* Кнопки в шапке макета*/
 
-.menu ul {
+.menu {
   float: right;
 
 	list-style: none;
@@ -205,8 +190,7 @@ h3 {
 }
 
 .menu li {
-	display: inline-block;
-	vertical-align: top;
+	float: right;
   text-align: center;
 
   width: 150px;
@@ -234,28 +218,6 @@ h3 {
   opacity: 0.51;
 }
 
-/* Иконки для кнопок шапки */
-
-.bookmark,
-.basket {
-  position: relative;
-}
-.bookmark::before {
-  content: '\1f516';
-  position: absolute;
-
-  top: 10;
-  left: 0;
-}
-
-.basket::before {
-  content: "\62";
-  position: absolute;
-
-  top: 10;
-  left: 0;
-}
-
 /* Вторая часть шапки сайта */
 
 .header-bottom {
@@ -280,7 +242,7 @@ h3 {
 	margin-right: 20px;
 }
 
-.header-phone span {
+.header-phone {
   position: relative;
   padding: 10px 50px;
   padding-left: 70px;
@@ -290,17 +252,6 @@ h3 {
   color: #e9292a;
   font-size: 21px;
   line-height: 18px;
-}
-
-.header-phone span::after {
-  content: '\1f4de';
-  position: absolute;
-  top: 20px;
-  left: 15px;
-
-  font-size: 22px;
-  line-height: 18px;
-  color: #b7bfc8;
 }
 
 .header-contacts p {
@@ -342,19 +293,18 @@ h3 {
   height: 20px;
 }
 
-/* WHY!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
-.btn-users:hover {
+.btn-user:hover {
   color: #ee3643;
 }
-
 
 .user-profile {
   float: right;
 }
 
 .main-navigation {
-  width: 930px;
+	display: table;
+  width: 100%;
 	margin-top: 40px;
 	margin-bottom: 60px;
 
@@ -363,9 +313,9 @@ h3 {
 }
 
 .main-navigation li {
-	display: inline-block;
+	display: table-cell;
 	vertical-align: top;
-  padding: 10px 30px;
+  padding: 20px 30px;
 
   font-size: 17px;
   line-height: 17px;
