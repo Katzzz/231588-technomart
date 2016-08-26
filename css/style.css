@@ -122,7 +122,7 @@ h3 {
 .logo {
 	float: left;
 	width: 220px;
-  padding: 10px 0;
+  padding: 11px 0;
 
   font-size: 24px;
   line-height: 24px;
@@ -150,12 +150,8 @@ h3 {
 	float: left;
 }
 
-.icon-search:focus {
-  color: #ee3643;
-}
-
 .search input[type="text"] {
-  width: 220px;
+  width: 230px;
   padding: 14px 0;
   padding-left: 40px;
 
@@ -192,17 +188,35 @@ h3 {
 .menu li {
 	float: right;
   text-align: center;
+}
 
-  width: 150px;
-  padding: 14px 0;
+.menu a {
+	display: block;
+	width: 150px;
+	padding: 14px 0;
+}
+
+.icon-basket,
+.icon-bookmark {
+	margin-right: 15px;
+	opacity: 0.3;
 }
 
 .menu li:hover {
   background-color: #212a3a;
 }
 
-.menu li:focus {
+.menu li:hover span {
+	opacity: 1;
+}
+
+.menu a:focus {
   background-color: #161d29;
+	opacity: 0.6;
+}
+
+.menu a:focus span {
+	opacity: 0.5;
 }
 
 .menu .btn-order {
@@ -215,7 +229,7 @@ h3 {
 
 .menu .btn-order:focus {
   background-color: #518534;
-  opacity: 0.51;
+  color: #8baa7c;
 }
 
 /* Вторая часть шапки сайта */
@@ -223,6 +237,7 @@ h3 {
 .header-bottom {
   background-color: #f1f5f7;
   padding-top: 45px;
+	padding-bottom: 51px;
 }
 
 .header-description {
@@ -238,7 +253,7 @@ h3 {
 
 .header-contacts {
 	float: left;
-	width: 300px;
+	width: 271px;
 	margin-right: 20px;
 }
 
@@ -254,11 +269,17 @@ h3 {
 }
 
 .header-contacts p {
-  padding: 0 10px;
+  padding-left: 6px;
 
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
+}
+
+.icon-phone {
+	margin-right: 35px;
+	margin-left: 13px;
+	color: #b7bfc8;
 }
 
 .user-block {
@@ -267,7 +288,7 @@ h3 {
 
 .user-block a {
   display: inline-block;
-  padding: 12px 25px;
+  padding: 12px 27px;
   background-color: #fff;
 
   font-size: 21px;
@@ -277,62 +298,28 @@ h3 {
   text-decoration: none;
 }
 
-.user-block .login {
-  position: relative;
-  padding-left: 47px;
+.icon-login {
+	color: #c5c5c5;
 }
 
-.user-block .login::before {
-  content: '\2386';
-  position: absolute;
-  left: 20px;
-
-  width: 20px;
-  height: 20px;
+.btn-user:hover .icon-login {
+	color: #32425c;
 }
 
+.btn-user:focus .icon-login {
+	color: #c5c5c5;
+}
 
 .btn-user:hover {
   color: #ee3643;
 }
 
+.btn-user:focus {
+	color: #c9c9c9;
+}
+
 .user-profile {
   float: right;
-}
-
-.main-navigation {
-	display: table;
-  width: 100%;
-	margin-top: 40px;
-	margin-bottom: 60px;
-
-  font-size: 0;
-}
-
-.main-navigation li {
-	display: table-cell;
-	vertical-align: top;
-  padding: 20px 0;
-  padding-right: 60px;
-
-  font-size: 17px;
-  line-height: 17px;
-  text-align: center;
-  background-color: #32425c;
-  box-shadow: inset 0 -5px #293449;
-}
-
-.main-navigation li:first-child {
-  padding-left: 50px;
-}
-
-.main-navigation li:last-child {
-  padding-right: 55px;
-}
-
-.main-navigation a {
-  color: #fff;
-  text-decoration: none;
 }
 
 /* Личный кабинет */
@@ -352,6 +339,49 @@ h3 {
 .user-set li {
   display: inline-block;
   vertical-align: top;
+}
+
+/* Блок навигации по сайту */
+
+.main-navigation {
+	display: table;
+  width: 100%;
+	margin-top: 40px;
+
+  font-size: 0;
+}
+
+.main-navigation li {
+	display: table-cell;
+	text-align: center;
+  padding: 25px 30px;
+
+  font-size: 17px;
+  line-height: 17px;
+  background-color: #32425c;
+  box-shadow: inset 0 -5px #293449;
+}
+
+.main-navigation li:first-child {
+  padding-left: 50px;
+}
+
+.main-navigation li:last-child {
+  padding-right: 55px;
+}
+
+.main-navigation a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.main-navigation li:hover {
+	background-color: #293449;
+}
+
+.main-navigation li:focus {
+	background-color:#1d2739;
+	color: 0.5;
 }
 
 /* Шапка страницы каталог*/
@@ -382,22 +412,53 @@ h3 {
 }
 
 .features .item-title {
-  padding: 20px 25px;
+  padding: 25px 25px;
   padding-bottom: 10px;
+	padding-left: 23px;
 
   font-size: 24px;
   line-height: 30px;
 }
 
+.item-features {
+	position: relative;
+	float: left;
+	margin-bottom: 20px;
+	width: 300px;
+
+  font-size: 24px;
+  line-height: 30px;
+	min-height: 124px;
+}
+
+.new:before {
+	content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+
+  width: 60px;
+  height: 60px;
+
+  background: url('../img/flag-new.png') no-repeat 0 0;
+}
+
 .features a {
+	display: block;
+	width: 135px;
+	padding: 10px 0;
+	margin-left: 25px;
+
   font-size: 14px;
   line-height: 18px;
+	text-align: center;
+
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
 
-
-  border-radius: 20%;
+	border-radius: 5px;
 }
 
 .features-one {
@@ -410,41 +471,112 @@ h3 {
 	width: 300px;
 }
 
-.item-features {
-	float: left;
-	margin-bottom: 20px;
-	width: 300px;
-
-  font-size: 24px;
-  line-height: 30px;
-	min-height: 124px;
-}
-
 .features-one .item-features:first-child {
 	margin-right: 20px;
 }
 
 .materials {
-  background-color: #f6b22d;
+	background: #f6b22d url(../img/material.png) no-repeat 213px 32px;
+}
+
+.materials a {
+	background-color: #dda028;
 }
 
 .tools {
-  background-color: #4aafde;
+  background: #4aafde url(../img/instruments.png) no-repeat 197px 34px;
+}
+
+.tools a {
+	background-color: #429dc7;
 }
 
 .technics {
-  background-color: #cc79d1;
+  background: #cc79d1 url(../img/tech.png) no-repeat 189px 32px;
 }
 
-.many-items {
-  background-color: #85d179;
+.technics a {
+	background-color: #b76dbc;
 }
 
-.for-free {
-  background-color: #f6b22d;
+.delivery {
+  background: #85d179 url(../img/delivery.png) no-repeat 189px 33px;
+}
+
+.delivery a {
+	background-color: #77bc6d;
+}
+
+.sale{
+  background: #f6b22d url(../img/sale.png) no-repeat 196px 27px;
+}
+
+.sale a {
+	background-color: #dda028;
 }
 
 /* Слайдер */
+
+/*.feature-slider {
+	position: relative;
+	float: left;
+
+	width: 620px;
+	min-height: 266px;
+}
+
+.slide-content {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.slide-title {
+	font-size: 36px;
+	line-height: 30px;
+}
+
+.slide-text {
+	position: absolute;
+
+	width: 100%;
+	min-height: 220px;
+	top: 0;
+	left: 0;
+
+	padding-top: 25px;
+	padding-left: 25px;
+}
+
+.slide-p {
+	padding-top: 5px;
+
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.slide .btn {
+  display: block;
+  width: 195px;
+  margin-top: 126px;
+  padding: 12px 50px;
+
+
+  font-size: 14px;
+	line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background: #fb565a;
+  border-radius: 3px;
+}
+
+.feature-slider input[type="radio"] {
+  display: none;
+}*/
+
 
 .feature-slider {
 	position: relative;
@@ -452,6 +584,10 @@ h3 {
 
 	width: 620px;
 	height: 266px;
+}
+
+.feature-slider li {
+	height: 100%;
 }
 
 .feature-slider li:not(.active) {
@@ -473,16 +609,26 @@ h3 {
 .slide-title {
 	position: relative;
 	z-index: 2;
+
+	padding-top: 25px;
+	padding-left: 25px;
+}
+
+.slide-item-title {
+	font-size: 36px;
+	line-height: 30px;
+
+	padding-bottom: 5px;
 }
 
 .btn-controllers {
   position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	height: 40px;
-	left: 0;
-	z-index: 1;
 	width: 100%;
+	height: 40px;
+	top: 50%;
+
+	transform: translateY(-50%);
+	z-index: 1;
 }
 
 .btn-controllers a {
@@ -494,19 +640,21 @@ h3 {
 .control-left {
 	position: absolute;
 	top: 0;
-	left: 0;
+	left: -60;
 }
 
 .control-right {
 	position: absolute;
 	top: 0;
-	right: 0;
+	right: -20;
 }
 
-.btn-slide-catalog {
-	position: absolute;
-	left: 24px;
-	top: 205px;
+.btn-slider {
+	position: relative;
+	width: 195px;
+	min-height: 27px;
+	left: 26px;
+	bottom: -20px;
 	z-index: 2;
 	color: #FFF;
 	text-decoration: none;

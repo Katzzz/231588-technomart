@@ -18,17 +18,17 @@
           Техномарт
         </div>
         <form class="search" action="https://echo.htmlacademy.ru" method="get">
-          <input class="icon-search" type="text" name="search" id="search" placeholder="Поиск:">
-        </form>
+					  <input type="text" name="search" id="search" placeholder="Поиск:">
+	      </form>
         <ul class="menu">
         	<li class="btn-order">
             <a href="#">Оформить заказ</a>
           </li>
-					<li class="icon-basket">
-            <a href="#">Корзина: 0</a>
+					<li>
+            <a href="#"><span class="icon-basket"></span>Корзина: 0</a>
           </li>
-					<li class="icon-bookmark">
-            <a href="#">Закладки: 0</a>
+					<li>
+            <a href="#"><span class="icon-bookmark"></span>Закладки: 0</a>
           </li>
         </ul>
       </div>
@@ -43,11 +43,17 @@
             и инструментов для ремонта</p>
           </div>
           <div class="header-contacts">
-            <div class="header-phone icon-phone">+7 (812) 555-05-55</div>
+            <div class="header-phone">
+							<span class="icon-phone"></span>
+							+7 (812) 555-05-55
+						</div>
             <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           </div>
           <div class="user-block">
-            <a class="btn-user icon-login" href="#">Войти</a>
+            <a class="btn-user" href="#">
+							<span class="icon-login"></span>
+							Войти
+						</a>
             <a class="btn-user" href="#">Регистрация</a>
           </div>
         </div>
@@ -85,16 +91,45 @@
     <main>
 
       <section class="container features clearfix">
+
 				<div class="features-one clearfix">
 					<div class="item-features materials">
 						<div class="item-title">Материалы</div>
-						<span class="new-item">new</span>
-						<a class="btn-features" href="#">На любой вкус</a>
+						<span class="flag new"></span>
+						<a href="#">На любой вкус</a>
 					</div>
 					<div class="item-features tools">
 						<div class="item-title">Инструмент</div>
-						<a class="btn-features" href="#">На все случаи</a>
+						<a href="#">На все случаи</a>
 					</div>
+
+					<!-- <div class="feature-slider">
+						<input type="radio" id="btn-1" name="control-left">
+						<input type="radio" id="btn-2" name="control-right">
+						<div>
+							<label for="btn-1"></label>
+              <label for="btn-2"></label>
+						</div>
+						<div class="slides">
+							<div class="slide-content">
+								<img class="slide-img" src="img/slide-2.jpg" alt="Перфораторы" width="620" height="266">
+								<div class="slide-text">
+									<div class="slide-title">Перфораторы</div>
+									<div class="slide-p">Настоящие мужские игрушки</div>
+									<a class="btn" href="#">Открыть каталог</a>
+								</div>
+							</div>
+							<div class="slide-content">
+								<img class="slide-img" src="img/slide-1.jpg" alt="Дрели" width="620" height="266">
+								<div class="slide-text">
+									<div class="slide-title">Дрели</div>
+									<div class="slide-p">Соседям на радость!</div>
+									<a class="btn" href="#">Открыть каталог</a>
+								</div>
+							</div>
+						</div>
+					</div> -->
+
 					<div class="feature-slider">
 						<ul class="feature-slids">
 							<li class="active">
@@ -103,7 +138,7 @@
 									<div class="slide-item-title">Перфораторы</div>
 									<div>Настоящие мужские игрушки</div>
 								</div>
-								<a class="btn-slide-catalog" href="#">Открыть каталог</a>
+								<a class="btn-slider" href="#">Открыть каталог</a>
 							</li>
 							<li>
 								<img class="slide-img" src="img/slide-2.jpg" alt="Дрели" width="620" height="266">
@@ -111,7 +146,7 @@
 									<div class="slide-item-title">Дрели</div>
 									<div>Соседям на радость</div>
 								</div>
-								<a class="btn-slide-catalog" href="#">Открыть каталог</a>
+								<a class="btn-slider" href="#">Открыть каталог</a>
 							</li>
 						</ul>
 						<div class="btn-controllers">
@@ -120,20 +155,22 @@
 						</div>
 					</div>
 				</div>
+
 				<div class="features-two clearfix">
 					<div class="item-features technics">
 						<div class="item-title">Техника</div>
-						<a class="btn-features" href="#">Для стройки</a>
+						<a href="#">Для стройки</a>
 					</div>
-					<div class="item-features many-items">
-						<div>Скидки 50%</div>
-						<a class="btn-features" href="#">На 350 товаров</a>
+					<div class="item-features sale">
+						<div class="item-title">Скидки 50%</div>
+						<a href="#">На 350 товаров</a>
 					</div>
-					<div class="item-features for-free">
-						<div>Доставка</div>
-						<a class="btn-features" href="#">Бесплатно</a>
+					<div class="item-features delivery">
+						<div class="item-title">Доставка</div>
+						<a href="#">Бесплатно</a>
 					</div>
 				</div>
+
       </section>
 
       <section class="container popular-items clearfix">
