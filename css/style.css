@@ -532,7 +532,7 @@ input[type="text"]:-ms-input-placeholder:hover {
   text-transform: uppercase;
 }
 
-.breadcrumbs li:after {
+.breadcrumbs li::after {
 	content: '\3e';
 	position: absolute;
 	top: -1px;
@@ -542,6 +542,10 @@ input[type="text"]:-ms-input-placeholder:hover {
 	line-height: 20px;
 	font-family: "symbols-technomart";
 	color: #c1c6ce;
+}
+
+.breadcrumbs li:last-child::after {
+	content: '';
 }
 
 .breadcrumbs .icon-home {
