@@ -1402,6 +1402,8 @@ input[type="checkbox"]:disabled + label {
   color: #000;
   opacity: 0.3;
   border-bottom: 1px dotted #ee3643;
+
+  cursor: pointer;
 }
 
 .catalog-items-filter .active-filter a {
@@ -1425,6 +1427,7 @@ input[type="checkbox"]:disabled + label {
   line-height: 38px;
 
   color: #c6c2bd;
+  cursor: pointer;
 }
 
 .icon-up-dir:hover,
