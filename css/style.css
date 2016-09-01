@@ -182,17 +182,24 @@ h3 {
 	opacity: 1;
 }
 
-.search input[type="text"]:focus span {
-	opacity: 1;
+.search:focus span{
 	color: #ee3643;
 }
+
+input[type="text"]::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+input[type="text"]::-moz-placeholder {
+  opacity: 1;
+}
+
+/* Кнопки в шапке макета*/
 
 .menu .active-btn-basket,
 .menu .active-btn-basket:hover  {
   background-color: #ee3643;
 }
-
-/* Кнопки в шапке макета*/
 
 .menu {
   float: right;
@@ -203,7 +210,7 @@ h3 {
 }
 
 .menu li {
-	float: right;
+	float: left;
   text-align: center;
 }
 
@@ -237,11 +244,7 @@ h3 {
 
 .menu a:focus {
   background-color: #161d29;
-	opacity: 0.6;
-}
-
-.menu a:focus span {
-	opacity: 0.5;
+	color: #a6a8ad;
 }
 
 .menu .btn-order {
@@ -555,6 +558,31 @@ h3 {
   background-color: #f2f6f8;
 }
 
+/* Общая кнопка (красная) */
+
+.btn {
+  display: block;
+  padding: 10px 50px;
+
+  font-size: 14px;
+	line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background: #ee3643;
+  border-radius: 3px;
+}
+
+.btn:hover {
+  background-color: #ca2c37;
+}
+
+.btn:focus {
+  background-color: #ba2732;
+}
+
 /* Блок особенности */
 
 .features {
@@ -597,25 +625,19 @@ h3 {
   background: url('../img/flag-new.png') no-repeat 0 0;
 }
 
-.btn {
-  display: block;
-  padding: 10px 50px;
-
-  font-size: 14px;
-	line-height: 18px;
-  text-align: center;
-  color: #ffffff;
-  text-transform: uppercase;
-  text-decoration: none;
-
-  background: #fb565a;
-  border-radius: 3px;
-}
-
 .features .btn-features {
 	width: 135px;
 	padding: 10px 0;
 	margin-left: 25px;
+  background-color: rgba(229, 229, 229, 0.2);
+}
+
+.features .btn-features:hover {
+  background-color: rgba(204, 204, 204, 0.2);
+}
+
+.features .btn-features:focus {
+  background-color: rgba(178, 178, 178, 0.2);
 }
 
 .features-one {
@@ -640,40 +662,20 @@ h3 {
 	background: #f6b22d url(../img/material.png) no-repeat 213px 30px;
 }
 
-.materials a {
-	background-color: #dda028;
-}
-
 .tools {
   background: #4aafde url(../img/instruments.png) no-repeat 197px 32px;
-}
-
-.tools a {
-	background-color: #429dc7;
 }
 
 .technics {
   background: #cc79d1 url(../img/tech.png) no-repeat 191px 31px;
 }
 
-.technics a {
-	background-color: #b76dbc;
-}
-
 .delivery {
   background: #f6b22d url(../img/delivery.png) no-repeat 190px 29px;
 }
 
-.delivery a {
-	background-color: #dda028;
-}
-
 .sale {
   background: #85d179 url(../img/sale.png) no-repeat 196px 25px;
-}
-
-.sale a {
-	background-color: #77bc6d;
 }
 
 /* Слайдер */
@@ -819,7 +821,7 @@ h3 {
 	padding: 0 30px;
 }
 
-.catalog-item .new:before {
+.catalog-item .new {
 	top: -1px;
 	right: -1px;
 }
@@ -1137,9 +1139,9 @@ h3 {
 }
 
 .company-btn {
-	width: 220px;
-	padding-right: 0;
-	padding-left: 0;
+	width: 200px;
+	padding-right: 10px;
+	padding-left: 10px;
 }
 
 .map-btn {
@@ -1354,9 +1356,18 @@ input[type="checkbox"]:disabled + label {
 
   color: #000;
   background-color: #fff;
-  border: 1px solid #c1c1c1;
+  border: 1px solid #e5e5e5;
 
   outline: none;
+}
+
+.sidebar-btn:hover {
+  background-color: #fff;
+  border: 1px solid #bdc6ca;
+}
+
+.sidebar-btn:focus {
+  border: 1px solid #ee3643;
 }
 
 
@@ -1452,7 +1463,7 @@ input[type="checkbox"]:disabled + label {
 	color: #000;
 }
 
-.catalog-item .new:before {
+.catalog-item .:before {
 	top: -1px;
 	right: -1px;
 }
@@ -1604,6 +1615,7 @@ input[type="checkbox"]:disabled + label {
 
 .pagination {
   margin-bottom: 60px;
+  margin-top: 32px;
 
   font-size: 0;
 }
@@ -1615,7 +1627,6 @@ input[type="checkbox"]:disabled + label {
 .pagination a {
   display: block;
   padding: 0 15px;
-	margin-top: 32px;
 	margin-right: 10px;
 
   text-decoration: none;
@@ -1700,10 +1711,13 @@ input[type="checkbox"]:disabled + label {
 	line-height: 24px;
 }
 
+.footer-top ul {
+  padding-top: 38px;
+}
+
 .footer-top li {
 	display: table-cell;
-	padding-right: 58px;
-	padding-top: 38px;
+  padding-right: 58px;
 }
 
 .footer-top li:last-child,
