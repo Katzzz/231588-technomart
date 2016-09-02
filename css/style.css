@@ -1831,8 +1831,8 @@ text-decoration: underline;
 
 .modal-content {
 	display: block;
-	position: absolute;
-	top: 411px;
+	position: fixed;
+	top: 87px;
 	left: 50%;
 	z-index: 20;
 
