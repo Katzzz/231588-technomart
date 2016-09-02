@@ -2008,7 +2008,7 @@ text-decoration: underline;
 
 .modal-content-map {
   position: fixed;
-	bottom: 356px;
+	top: 87px;
   left: 50%;
   z-index: 20;
 
