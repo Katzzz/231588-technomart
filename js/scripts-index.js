@@ -1,19 +1,3 @@
-/* Всплывающее окно товара */
-
-var basket = document.querySelector(".buy");
-var popup = document.querySelector(".modal-item");
-var close = popup.querySelector(".modal-content-close");
-
-basket.addEventListener("click", function(event) {
-	event.preventDefault();
-	popup.classList.add("modal-item-show");
-});
-
-close.addEventListener("click", function(event) {
-	event.preventDefault();
-	popup.classList.remove("modal-item-show");
-});
-
 /* Всплывающее окно feedback */
 
 var fb = document.querySelector(".fb-btn");
@@ -23,7 +7,6 @@ var nameInput = feedback.querySelector("[name=name]");
 var emailInput = feedback.querySelector("[name=email]");
 var form = feedback.querySelector("form");
 var storage = localStorage.getItem("name");
-
 
 fb.addEventListener("click", function(event) {
 	event.preventDefault();

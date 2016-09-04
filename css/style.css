@@ -276,6 +276,7 @@ input[type="text"]::-moz-placeholder {
   padding: 0 50px;
 
   font-size: 16px;
+	font-style: italic;
   line-height: 23px;
   color: #ee3643;
 }
@@ -1838,7 +1839,7 @@ text-decoration: underline;
 
 /* Всплывающее окно "Добавление в корзину" */
 
-.modal-item {
+.modal-content {
   display: none;
 	position: fixed;
 	top: 87px;
@@ -1857,15 +1858,15 @@ text-decoration: underline;
 		inset 0 7px 0 #ee3643;
 }
 
-.modal-item-show {
+.modal-content-show {
   display: block;
 	animation: run 0.6s;
 }
 
 .modal-content-close {
   position: absolute;
-  top: 17px;
-  right: 10px;
+  top: 5px;
+  right: -35px;
 
   width: 21px;
   height: 21px;
@@ -1899,7 +1900,7 @@ text-decoration: underline;
   transform: rotate(-45deg);
 }
 
-.modal-item-title {
+.modal-content-title {
 	position: relative;
 	padding-bottom: 70px;
 	padding-left: 100px;
@@ -1930,12 +1931,12 @@ text-decoration: underline;
 	padding-right: 0;
 }
 
-.modal-item-ordered {
+.modal-content-ordered {
 	float: left;
 	width: 220px;
 }
 
-.modal-item-continue {
+.modal-content-continue {
 	float: right;
 	width: 220px;
 
@@ -1943,7 +1944,7 @@ text-decoration: underline;
 	color: #000;
 }
 
-.modal-item-continue:hover {
+.modal-content-continue:hover {
 	background-color: #fff;
 }
 
