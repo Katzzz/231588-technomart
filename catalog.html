@@ -459,34 +459,16 @@
 
       </footer>
 
-			<div class="modal-content">
-				<h2 class="modal-content-title">Товар добавлен в корзину!</h2>
+			<div class="modal-item">
+				<h2 class="modal-item-title">Товар добавлен в корзину!</h2>
 				<div class="modal-container clearfix">
-					<a class="btn modal-content-ordered" href="#">Оформить заказ</a>
-					<a class="btn modal-content-continue" href="#">Продолжить покупки</a>
+					<a class="btn modal-item-ordered" href="#">Оформить заказ</a>
+					<a class="btn modal-item-continue" href="#">Продолжить покупки</a>
 				</div>
-				<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+				<button class="modal-item-close" type="button" title="Закрыть">Закрыть</button>
 			</div>
 
-      <!-- <script src="js/scripts.js"></script> -->
+      <script type="text/javascript" src="./js/scripts.js"></script>
 
-      <script>
-
-        var basket = document.querySelector(".buy");
-        var popup = document.querySelector(".modal-content");
-        var close = popup.querySelector(".modal-content-close");
-
-        basket.addEventListener("click", function(event) {
-          event.preventDefault();
-          popup.classList.add("modal-content-show");
-        });
-
-        close.addEventListener("click", function(event) {
-          event.preventDefault();
-          popup.classList.remove("modal-content-show");
-        });
-
-      </script>
-
-    </body>
-    </html>
+		</body>
+  </html>

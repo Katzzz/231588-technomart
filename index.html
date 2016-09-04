@@ -18,8 +18,8 @@
           Техномарт
         </div>
         <form class="search" action="https://echo.htmlacademy.ru" method="get">
-							<span class="icon-search"></span>
-							<input type="text" name="search" id="search" placeholder="Поиск:">
+					<input type="text" name="search" id="search" placeholder="Поиск:">
+					<span class="icon-search"></span>
 	      </form>
         <ul class="menu">
 					<li>
@@ -37,7 +37,7 @@
 
 		<div class="header-bottom">
       <div class="container clearfix">
-        <div class="header-first-block clearfix">
+        <div class="header-desc-content clearfix">
           <div class="header-description">
             Интернет-магазин
             строительных материалов<br>
@@ -301,7 +301,7 @@
               <h2>Контакты</h2>
               <p>Вы можете забрать товар сами,<br>
                 заехав в наш офис:</p>
-                <a class="uder-map" href="#">
+                <a class="js-open-map" href="#">
                   <img src="img/info-map.jpg" alt="Карта" width="300" height="160">
                 </a>
                 <button class="btn fb-btn" type="button">Заблудились? Напишите нам!</button>
@@ -408,55 +408,10 @@
 
 					<div class="modal-content-map">
       			<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
-      			<div id="yandex-map"></div>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6195465825067!2d30.320147027970854!3d59.93845499752449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1472986350060" width="940" height="446" frameborder="0" style="border:0" allowfullscreen></iframe>
     		 </div>
 
-         <script>
-
-            var fb = document.querySelector(".fb-btn");
-            var feedback = document.querySelector(".feedback");
-            var close = feedback.querySelector(".modal-content-close");
-            var name = feedback.querySelector("[name=name]");
-            var email = feedback.querySelector("[name=email]");
-            var form = feedback.querySelector("form");
-            var storage = localStorage.getItem("name");
-
-
-            fb.addEventListener("click", function(event) {
-              event.preventDefault();
-              feedback.classList.add("feedback-show");
-              if (storage) {
-                name.value = storage;
-                email.focus();
-              } else {
-                name.focus();
-              }
-            });
-
-            form.addEventListener("submit", function(event) {
-              event.preventDefault();
-              if (!name.value || !email.value) {
-              event.preventDefault();
-            }
-              else {
-              localStorage.setItem("name", login.value);
-              }
-            });
-
-            close.addEventListener("click", function(event) {
-              event.preventDefault();
-              feedback.classList.remove("feedback-show");
-            });
-
-            window.addEventListener("keydown", function(event) {
-              if (event.keyCode === 27) {
-              if (fb.classList.contains("feedback-show")) {
-                fb.classList.remove("feedback-show");
-              }
-            }
-          });
-
-        </script>
-
-        </body>
-        </html>
+				 <script type="text/javascript" src="./js/scripts.js"></script>
+	
+      </body>
+    </html>
