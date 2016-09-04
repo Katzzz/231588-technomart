@@ -1039,7 +1039,7 @@ input[type="text"]::-moz-placeholder {
 }
 
 .services-text p {
-  width: 380px;
+  width: 300px;
 	font-size: 13px;
 	font-family: "PT Sans", "Arial", sans-serif;, "Arial", sans-serif;
 	line-height: 24px;
@@ -1067,6 +1067,23 @@ input[type="text"]::-moz-placeholder {
 .services-credit {
   background: url(../img/credit-services.png) no-repeat 100% 0;
 	min-height: 285px;
+}
+
+.services .btn-credit {
+	width: 106px;
+	padding: 15px 45px;
+	margin-top: 30px;
+
+	box-shadow: none;
+	background-color: #ee3643;
+}
+
+.services .btn-credit:hover {
+  background-color: #ca2c37;
+}
+
+.services .btn-credit:focus {
+  background-color: #ba2732;
 }
 
 /* Блок о компании*/
@@ -1533,7 +1550,7 @@ input[type="checkbox"]:disabled + label {
   border-left-color: #ee3643;
 }
 
-.catalog-item .actions {
+.actions {
   position: absolute;
   top: 0;
   left: 0;
@@ -1543,8 +1560,8 @@ input[type="checkbox"]:disabled + label {
   background-color: #fff;
 }
 
-.actions .buy,
-.actions .bookmark {
+.buy,
+.bookmark {
   font-size: 14px;
   display: block;
   width: 135px;
@@ -1580,19 +1597,21 @@ input[type="checkbox"]:disabled + label {
   font-size: 17px;
 }
 
-.catalog-item .actions {
+.actions {
   display: none;
 }
 
-.catalog-item:hover .actions {
+.catalog-item:hover .actions,
+.popular-item:hover .actions {
   display: block;
 }
 
-.actions .buy:hover {
+.buy:hover {
   background-color: #5fbb2d;
 }
 
-.catalog-item:hover {
+.catalog-item:hover,
+.popular-item:hover {
   box-shadow: 0 5px 15px 5px #b4b8bf;
 }
 
@@ -2000,6 +2019,7 @@ text-decoration: underline;
 	font-family: "PT Sans", "Arial", sans-serif;, "Arial", sans-serif;
   border: 2px solid #d7dcde;
   border-radius: 3px;
+	box-shadow: none;
 }
 
 .feedback input[id="name"],
@@ -2022,6 +2042,7 @@ text-decoration: underline;
   border: 2px solid #d7dcde;
   border-radius: 3px;
   resize: none;
+	box-shadow: none;
 }
 
 .feedback .modal-content-send {
