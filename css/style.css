@@ -1046,7 +1046,7 @@ input[type="text"]::-moz-placeholder {
 }
 
 .services-slides {
-	padding-bottom: 52px;
+	padding-bottom: 12px;
   float: left;
 }
 
@@ -1056,17 +1056,17 @@ input[type="text"]::-moz-placeholder {
 
 .services-delivery {
   background: url(../img/delivery-services.png) no-repeat 151px 52px;
-	min-height: 261px;
+	min-height: 303px;
 }
 
 .services-guarantee {
   background: url(../img/guarantee-services.png) no-repeat 100% 0;
-	min-height: 283px;
+	min-height: 303px;
 }
 
 .services-credit {
   background: url(../img/credit-services.png) no-repeat 100% 0;
-	min-height: 285px;
+	min-height: 303px;
 }
 
 .services .btn-credit {
