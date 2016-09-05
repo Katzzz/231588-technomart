@@ -1221,10 +1221,6 @@ input[type="text"]::-moz-placeholder {
 	padding-left: 10px;
 }
 
-.fb-btn {
-	width: 300px;
-}
-
 /* Боковой филтер блока каталог */
 
 .catalog-filter {
