@@ -693,107 +693,124 @@ input[type="text"]::-moz-placeholder {
 
 /* Слайдер */
 
-.feature-slider {
-	position: relative;
-	float: left;
+.slider {
+  position: relative;
+  float: left;
 
-	width: 620px;
-	height: 266px;
+  width: 620px;
+  height: 266px;
 }
 
-.feature-slider li {
+.slider input[type="radio"] {
+  display: none;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+
   width: 100%;
-	height: 100%;
-}
-
-.feature-slider li:not(.active) {
-	display: none;
-}
-
-.feature-slider li.active {
-  position: absolute;;
-  color: #fff;
-}
-
-.feature-slids {
   height: 100%;
+  z-index: 2;
 }
 
 .slide-img {
-	position: absolute;
-	left: 0;
-	right: 0;
-	z-index: 1;
+  position: relative;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.btn-slider {
+  position: relative;
+  top: 121px;
+  left: 27px;
+	width: 195px;
+  padding: 10px 0;
+}
+
+.slide-text {
+  padding-top: 26px;
+  padding-left: 25px;
+}
+.slide-text p {
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .slide-title {
-	position: absolute;
-	z-index: 2;
-
-	padding-top: 7px;
-	padding-left: 25px;
-}
-
-.slide-item-title {
-  position: relative;
-	font-size: 36px;
-	line-height: 30px;
-
-	padding-bottom: 5px;
+  font-size: 36px;
+  line-height: 30px;
+  padding-bottom: 5px;
   text-transform: uppercase;
 }
 
-.slide-item-p {
-  position: relative;
-  font-size: 18px;
-  line-height: 24px;
-  font-family: "PT Sans", "Arial", sans-serif;, "Arial", sans-serif;
+.slide:nth-child(1) {
+  background: #5a4f3d url('../img/slide-2.jpg') no-repeat 100%;
 }
 
-.btn-controllers {
+.slide:nth-child(2) {
+  background: #5a4f3d url('../img/slide-1.jpg') no-repeat 100%;
+}
+
+.slider-controls {
   position: absolute;
 	width: 100%;
 	height: 40px;
 	top: 50%;
 
-	transform: translateY(-50%);
-	z-index: 1;
-}
+  font-size: 40px;
+  color: #fff;
+  text-decoration: none;
 
-.btn-controllers a {
-	font-size: 40px;
-	color: #fff;
-	text-decoration: none;
+	transform: translateY(-50%);
+	z-index: 20;
 }
 
 .icon-left {
   float: left;
+  cursor: pointer;
 }
 
 .icon-right {
   float: right;
+  cursor: pointer;
 }
 
 .icon-left::before {
 	position: relative;;
-	top: 0px;
+	top: 2px;
 	left: 9px;
 }
 
 .icon-right::before {
 	position: relative;;
-	top: 0;
+	top: 2px;
 	right: 3px;
 }
 
-.btn-slider {
-	position: absolute;
-	width: 195px;
-	left: 26px;
-	bottom: 23px;
-	z-index: 2;
-  padding: 10px 0;
+#btn-1:checked ~ .slides .slide:nth-child(1) {
+  left: 0;
 }
+
+#btn-1:checked ~ .slides .slide:nth-child(2) {
+  left: -880px;
+}
+
+#btn-2:checked ~ .slides .slide:nth-child(1) {
+  left: -880px;
+}
+
+#btn-2:checked ~ .slides .slide:nth-child(2) {
+  left: 0;
+}
+
+
 /* Блок популярные товары и производители */
 
 /* общее */
