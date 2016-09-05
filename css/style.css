@@ -366,11 +366,12 @@ input[type="text"]::-moz-placeholder {
 .user-profile {
   float: right;
 	position: relative;
+	font-size: 0;
 }
 
 .user-profile .icon-user {
 	position: absolute;
-	top: 14px;
+	top: 12px;
 	left: 11px;
 
 	font-size: 18px;
@@ -380,7 +381,7 @@ input[type="text"]::-moz-placeholder {
 .user-profile .icon-logout {
 	position: absolute;
 	top: 11px;
-	right: 15px;
+	right: 4px;
 
 	font-size: 22px;
 	color: #000;
@@ -401,9 +402,9 @@ input[type="text"]::-moz-placeholder {
 
 .login-btn {
 	display: block;
-	padding: 15px 0;
-	padding-left: 39px;
-	padding-right: 70px;
+	padding: 13px 0;
+	padding-left: 45px;
+	padding-right: 68px;
 
 	font-size: 21px;
 	line-height: 18px;
@@ -438,6 +439,9 @@ input[type="text"]::-moz-placeholder {
 
 	font-size: 16px;
 	text-decoration: underline;
+}
+
+.user-set a {
 	color: #32425c;
 }
 
@@ -795,19 +799,19 @@ input[type="text"]::-moz-placeholder {
 }
 
 #btn-1:checked ~ .slides .slide:nth-child(1) {
-  left: 0;
+  display: block;
 }
 
 #btn-1:checked ~ .slides .slide:nth-child(2) {
-  left: -880px;
+  display: none;
 }
 
 #btn-2:checked ~ .slides .slide:nth-child(1) {
-  left: -880px;
+  display: none;
 }
 
 #btn-2:checked ~ .slides .slide:nth-child(2) {
-  left: 0;
+  display: block;
 }
 
 
@@ -1362,10 +1366,11 @@ aside {
   line-height: 20px;
 }
 
-.catalog-filter input[type="checkbox"] + label::before {
+.catalog-filter input[type="checkbox"]:not(:checked) + label::before {
   content: '\2610';
   position: absolute;
   left: 0;
+	top: 0;
 
   font-family: "symbols-technomart";
   font-size: 28px;
@@ -1373,10 +1378,11 @@ aside {
   color: #c1c1c1;
 }
 
-.catalog-filter input[type="radio"] + label::before {
+.catalog-filter input[type="radio"]:not(:checked) + label::before {
   content: '\25cb';
   position: absolute;
   left: 0;
+	top: 0;
 
   font-family: "symbols-technomart";
   font-size: 28px;
@@ -1388,6 +1394,7 @@ aside {
   content: '\2611';
   position: absolute;
   left: 0;
+	top: 0;
 
   font-family: "symbols-technomart";
   font-size: 28px;
@@ -1399,6 +1406,7 @@ aside {
   content: '\25cf';
   position: absolute;
   left: 0;
+	top: 0;
 
   font-family: "symbols-technomart";
   font-size: 28px;
