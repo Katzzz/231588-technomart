@@ -1019,11 +1019,6 @@ input[type="text"]::-moz-placeholder {
 	line-height: 24px;
 }
 
-.services-slider ul {
-	list-style: none;
-	z-index: 1;
-}
-
 .services-list::before {
 	content: '';
 	position: absolute;
@@ -1109,37 +1104,37 @@ input[type="text"]::-moz-placeholder {
   display: none;
 }
 
-#sl-1:checked ~ .slides .slide:nth-child(1) {
-  left: 0;
+#sl-1:checked ~ .services-slides .services-text:nth-child(1) {
+  display: block;
 }
 
-#sl-1:checked ~ .slides .slide:nth-child(2),
-#sl-1:checked ~ .slides .slide:nth-child(3) {
-  left: -620px;
+#sl-1:checked ~ .services-slides .services-text:nth-child(2),
+#sl-1:checked ~ .services-slides .services-text:nth-child(3) {
+  display: none;
 }
 
-#sl-2:checked ~ .slides .slide:nth-child(1) {
-  left: -620px;
+#sl-2:checked ~ .services-slides .services-text:nth-child(1) {
+  display: none;
 }
 
-#sl-2:checked ~ .slides .slide:nth-child(2) {
-  left: 0;
+#sl-2:checked ~ .services-slides .services-text:nth-child(2) {
+  display: block;
 }
 
-#sl-2:checked ~ .slides .slide:nth-child(3) {
-  left: -620px;
+#sl-2:checked ~ .services-slides .services-text:nth-child(3) {
+  display: none;
 }
 
-#sl-3:checked ~ .slides .slide:nth-child(1) {
-  left: -620px;
+#sl-3:checked ~ .services-slides .services-text:nth-child(1) {
+  display: none;
 }
 
-#sl-3:checked ~ .slides .slide:nth-child(2) {
-  left: -620px;
+#sl-3:checked ~ .services-slides .services-text:nth-child(2) {
+  display: none;
 }
 
-#btn-3:checked ~ .slides .slide:nth-child(3) {
-  left: 0;
+#sl-3:checked ~ .slides .slide:nth-child(3) {
+  display: block;
 }
 
 /* Блок о компании*/
