@@ -984,7 +984,7 @@ input[type="text"]::-moz-placeholder {
 	line-height: 24px;
 }
 
-.services a {
+.services label{
 	display: block;
 	width: 196px;
 	padding: 15px 22px;
@@ -997,8 +997,14 @@ input[type="text"]::-moz-placeholder {
 	text-decoration: none;
 }
 
-.services a:hover  {
+.services label:hover  {
 	background-color: #293449;
+}
+
+.services label.active {
+	background-color: #fff;
+	color: #32425c;
+	box-shadow: none;
 }
 
 .service-title {
@@ -1018,7 +1024,7 @@ input[type="text"]::-moz-placeholder {
 	z-index: 1;
 }
 
-.services-list ul::before {
+.services-list::before {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -1051,14 +1057,7 @@ input[type="text"]::-moz-placeholder {
   line-height: 30px;
 }
 
-.services-list .active a {
-	background-color: #fff;
-	color: #32425c;
-	box-shadow: none;
-}
-
 .services-text {
-	display: none;
 	width: 620px;
 }
 
@@ -1072,10 +1071,6 @@ input[type="text"]::-moz-placeholder {
 .services-slides {
 	padding-bottom: 12px;
   float: left;
-}
-
-.services-delivery {
-	display: block;
 }
 
 .services-delivery {
@@ -1108,6 +1103,43 @@ input[type="text"]::-moz-placeholder {
 
 .services .btn-credit:focus {
   background-color: #ba2732;
+}
+
+.services input[type="radio"] {
+  display: none;
+}
+
+#sl-1:checked ~ .slides .slide:nth-child(1) {
+  left: 0;
+}
+
+#sl-1:checked ~ .slides .slide:nth-child(2),
+#sl-1:checked ~ .slides .slide:nth-child(3) {
+  left: -620px;
+}
+
+#sl-2:checked ~ .slides .slide:nth-child(1) {
+  left: -620px;
+}
+
+#sl-2:checked ~ .slides .slide:nth-child(2) {
+  left: 0;
+}
+
+#sl-2:checked ~ .slides .slide:nth-child(3) {
+  left: -620px;
+}
+
+#sl-3:checked ~ .slides .slide:nth-child(1) {
+  left: -620px;
+}
+
+#sl-3:checked ~ .slides .slide:nth-child(2) {
+  left: -620px;
+}
+
+#btn-3:checked ~ .slides .slide:nth-child(3) {
+  left: 0;
 }
 
 /* Блок о компании*/
