@@ -465,30 +465,38 @@ input[type="text"]::-moz-placeholder {
 /* Блок навигации по сайту */
 
 .main-navigation {
-	display: table;
-  width: 100%;
+  width: 940px;
 	padding-top: 40px;
 
   font-size: 0;
-	box-shadow: 0 5px #293449;
 }
 
 .main-navigation li {
-	display: table-cell;
-	text-align: center;
+  float: left;
 }
 
 .main-navigation a {
-	display: block;
-	width: 100%;
-	padding: 21px 0;
-  padding-bottom: 20px;
+  display: inline-block;
+  vertical-align: top;
+	padding: 20px;
+  padding-left: 30px;
+  padding-right: 32px;
 
 	font-size: 17px;
 	line-height: 17px;
+  text-align: center;
 	background-color: #32425c;
 	color: #fff;
   text-decoration: none;
+  box-shadow: 0 5px #293449;
+}
+
+.main-navigation li:last-child a {
+  padding-right: 47px;
+}
+
+.main-navigation li:first-child a {
+  padding-left: 53px;
 }
 
 .main-navigation a:hover {
@@ -786,7 +794,6 @@ input[type="text"]::-moz-placeholder {
 	z-index: 2;
   padding: 10px 0;
 }
-
 /* Блок популярные товары и производители */
 
 /* общее */
