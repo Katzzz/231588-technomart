@@ -1129,16 +1129,16 @@ input[type="text"]::-moz-placeholder {
   display: none;
 }
 
+#sl-3:checked ~ .slides .slide:nth-child(3) {
+  display: block;
+}
+
 #sl-3:checked ~ .services-slides .services-text:nth-child(1) {
   display: none;
 }
 
 #sl-3:checked ~ .services-slides .services-text:nth-child(2) {
   display: none;
-}
-
-#sl-3:checked ~ .slides .slide:nth-child(3) {
-  display: block;
 }
 
 /* Блок о компании*/
