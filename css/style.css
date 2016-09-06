@@ -532,7 +532,7 @@ input[type="text"]::-moz-placeholder {
 
 	text-decoration: none;
 	color: #000;
-	font-family: "PT Sans", "Arial", sans-serif;, "Arial", sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .breadcrumbs li {
@@ -891,7 +891,7 @@ input[type="text"]::-moz-placeholder {
   margin-bottom: 9px;
   text-decoration: line-through;
   color: #999;
-  font-family: "PT Sans", "Arial", sans-serif;, "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .popular-item .current-price {
@@ -984,7 +984,7 @@ input[type="text"]::-moz-placeholder {
 .service-title p {
   min-width: 400px;
 	font-size: 13px;
-	font-family: "PT Sans", "Arial", sans-serif;, "Arial", sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 	line-height: 24px;
 }
 
@@ -1063,7 +1063,7 @@ input[type="text"]::-moz-placeholder {
 .services-text p {
   width: 300px;
 	font-size: 13px;
-	font-family: "PT Sans", "Arial", sans-serif;, "Arial", sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 	line-height: 24px;
 }
 
@@ -1155,7 +1155,7 @@ input[type="text"]::-moz-placeholder {
 	font-size: 13px;
 	line-height: 24px;
 
-	font-family: "PT Sans", "Arial", sans-serif;, "Arial", sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .index-info h2 {
@@ -1242,13 +1242,13 @@ aside {
   background-color: #f7f3ec;
 
   font-size: 13px;
-  font-family: "PT Sans", "Arial", sans-serif;, "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   line-height: 38px;
 }
 
 .range-title {
   padding: 18px 0;
-  font-family: "PT Sans", "Arial", sans-serif;, "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .range-controls {
@@ -1302,7 +1302,7 @@ aside {
   width: 95px;
   padding: 10px 0;
 
-  font-family: "PT Sans", "Arial", sans-serif;, "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
 
   text-align: center;
@@ -1331,7 +1331,7 @@ aside {
   padding: 15px 0;
 
   font-size: 17px;
-  font-family: "PT Sans", "Arial", sans-serif;, "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   line-height: 30px;
   color: #000;
   border-top: 2px solid #e5e5e5;
@@ -1358,7 +1358,7 @@ aside {
   padding-left: 35px;
 
   font-size: 15px;
-  font-family: "PT Sans", "Arial", sans-serif;, "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   line-height: 20px;
 }
 
@@ -1429,7 +1429,7 @@ input[type="checkbox"]:disabled + label {
   border: 0;
 
   font-size: 13px;
-  font-family: "PT Sans", "Arial", sans-serif;, "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
 
   color: #000;
   background-color: #fff;
@@ -1465,7 +1465,7 @@ input[type="checkbox"]:disabled + label {
 
   font-size: 13px;
   line-height: 38px;
-  font-family: "PT Sans", "Arial", sans-serif;, "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
 }
 
@@ -1717,7 +1717,7 @@ input[type="checkbox"]:disabled + label {
   color: #000;
   line-height: 38px;
 
-	font-family: "PT Sans", "Arial", sans-serif;, "Arial", sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 
 	color: #000;
 	text-transform: uppercase;
@@ -1765,7 +1765,7 @@ input[type="checkbox"]:disabled + label {
 
 	font-size: 13px;
 	line-height: 24px;
-	font-family: "PT Sans", "Arial", sans-serif;, "Arial", sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 }
 
 /* Подвал сайта */
@@ -2071,7 +2071,7 @@ text-decoration: underline;
   margin-bottom: 20px;
 
 	font-size: 13px;
-	font-family: "PT Sans", "Arial", sans-serif;, "Arial", sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
   border: 2px solid #d7dcde;
   border-radius: 3px;
 	box-shadow: none;
@@ -2093,7 +2093,7 @@ text-decoration: underline;
 	padding: 10px 15px;
 
   font-size: 13px;
-  font-family: "PT Sans", "Arial", sans-serif;, "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   border: 2px solid #d7dcde;
   border-radius: 3px;
   resize: none;
